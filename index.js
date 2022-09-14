@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGO_URL, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hellos World");
+  res.send("App is working.");
 });
 
 app.listen(process.env.PORT || 4000, () => {
